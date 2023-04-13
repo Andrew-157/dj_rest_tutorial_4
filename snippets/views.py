@@ -9,6 +9,7 @@ from .serializers import SnippetSerializer, UserSerializer
 from .models import Snippet
 
 
+@api_view(['GET'])
 def api_root(request, format=None):
     return Response(
         {
